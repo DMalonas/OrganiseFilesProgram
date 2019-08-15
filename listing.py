@@ -27,4 +27,6 @@ def organize_photos(directory):
 		os.rename(filename, os.path.join(extract_place(filename), filename))
 
 
-organize_photos("photos")
+if __name__ == '__main__':
+	organize_photos("photos")
+	print("TEST!")
