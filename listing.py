@@ -11,6 +11,8 @@ def extract_place(filename):
 
 
 os.chdir("photos")
+places = []
 originals = os.listdir()
-print(extract_place("2016-11-04_Berlin_09/42/22.jpg"))
-
+for file in originals:
+	places.append(extract_place(file))
+print(places)
